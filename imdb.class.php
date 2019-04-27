@@ -1,7 +1,6 @@
 <?php
-#https://github.com/abhinayrathore/PHP-IMDb-Scraper
-class IMDb{
 
+class IMDb{
 	static function getMovieInfo($title, $getExtraInfo = true){
 		$imdbId = self::getIMDbIdFromSearch(trim($title));
 		if($imdbId === NULL){
